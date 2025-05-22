@@ -1,4 +1,4 @@
-package app.ies.callcontrol.models
+package app.ies.callcontrol.data.models
 
 data class RingerState(
     val volume: Int,
