@@ -8,6 +8,7 @@ import android.media.AudioManager
 class MuteReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         val audioManager = context?.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        print("here muting")
         audioManager.setStreamVolume(AudioManager.STREAM_RING, 0 , AudioManager.FLAG_SHOW_UI)
     }
 }
